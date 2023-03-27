@@ -18,6 +18,7 @@ const compareVersions = require('compare-versions');
     data.swagger = '2.0';
     _.each(data.paths, apis => {
       _.each(apis, api => {
+        if(api.responses == undefined) return;
         _.each(api.responses, res => {
           if (
             res.content &&
@@ -96,6 +97,7 @@ const compareVersions = require('compare-versions');
         // parameters is common parameters, not a method
         delete apis.parameters;
         _.each(apis, (api, method) => {
+          if(method == 'description')return
           api.path = path;
           api.method = method;
           let data = null;
