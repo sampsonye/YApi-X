@@ -95,6 +95,7 @@ const compareVersions = require('compare-versions');
 
       _.each(res.paths, (apis, path) => {
         // parameters is common parameters, not a method
+        var comment = JSON.parse(apis.description || "{}");
         delete apis.parameters;
         _.each(apis, (api, method) => {
           if(method == 'description')return
@@ -117,6 +118,20 @@ const compareVersions = require('compare-versions');
             data = null;
           }
           if (data) {
+            var str = "";
+            if(comment.actionDesc){
+              str += `<h4>说明</h4><p>${comment.actionDesc}</p>`
+            }
+            if(comment.requestQueryDesc){
+              str += `<h4>参数示例</h4><pre><code>${comment.requestQueryDesc}</code></pre>`
+            }
+            if(comment.requestBodyDesc){
+              str += `<h4>请求示例</h4><pre><code>${JSON.stringify(JSON.parse(comment.requestBodyDesc), null, "  ")}</code></pre>`
+            }
+            if(comment.responseDesc){
+              str += `<h4>响应示例</h4><pre><code>${JSON.stringify(JSON.parse(comment.responseDesc), null, "  ")}</code></pre>`
+            }
+            data.desc = str
             interfaceData.apis.push(data);
           }
         });
