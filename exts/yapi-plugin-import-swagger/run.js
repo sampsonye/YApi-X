@@ -85,7 +85,8 @@ const compareVersions = require('compare-versions');
       if (res.tags && Array.isArray(res.tags)) {
         res.tags.forEach(tag => {
           interfaceData.cats.push({
-            name: tag.name,
+            apiName: tag.name,
+            name: tag.description,
             desc: tag.description
           });
         });
@@ -161,15 +162,13 @@ const compareVersions = require('compare-versions');
         if(/v[0-9\.]+/.test(data.tags[i])){
           continue;
         }
-
-        // 如果根路径有 tags，使用根路径 tags,不使用每个接口定义的 tag 做完分类
-        if(originTags.length > 0 && _.find(originTags, item=>{
-          return item.name === data.tags[i]
-        })){
-          api.catname = data.tags[i];
-          break;
+        if(originTags.length>0){
+          let tempTag = _.find(originTags,item=>item.name === data.tags[i])
+          if(tempTag){
+            api.catname = tempTag.description;
+            break;
+          }
         }
-
         if(originTags.length === 0){
           api.catname = data.tags[i];
           break;
