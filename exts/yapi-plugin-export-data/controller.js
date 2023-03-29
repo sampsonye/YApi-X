@@ -147,10 +147,32 @@ class exportController extends baseController {
       </head>
       <body>
         <div class="m-header">
-          <a href="#" style="display: inherit;"><svg class="svg" width="32px" height="32px" viewBox="0 0 64 64" version="1.1"><title>Icon</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1"><stop stop-color="#FFFFFF" offset="0%"></stop><stop stop-color="#F2F2F2" offset="100%"></stop></linearGradient><circle id="path-2" cx="31.9988602" cy="31.9988602" r="2.92886048"></circle><filter x="-85.4%" y="-68.3%" width="270.7%" height="270.7%" filterUnits="objectBoundingBox" id="filter-3"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.159703351 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="大屏幕"><g id="Icon"><circle id="Oval-1" fill="url(#linearGradient-1)" cx="32" cy="32" r="32"></circle><path d="M36.7078009,31.8054514 L36.7078009,51.7110548 C36.7078009,54.2844537 34.6258634,56.3695395 32.0579205,56.3695395 C29.4899777,56.3695395 27.4099998,54.0704461 27.4099998,51.7941246 L27.4099998,31.8061972 C27.4099998,29.528395 29.4909575,27.218453 32.0589004,27.230043 C34.6268432,27.241633 36.7078009,29.528395 36.7078009,31.8054514 Z" id="blue" fill="#2359F1" fill-rule="nonzero"></path><path d="M45.2586091,17.1026914 C45.2586091,17.1026914 45.5657231,34.0524383 45.2345291,37.01141 C44.9033351,39.9703817 43.1767091,41.6667796 40.6088126,41.6667796 C38.040916,41.6667796 35.9609757,39.3676862 35.9609757,37.0913646 L35.9609757,17.1034372 C35.9609757,14.825635 38.0418959,12.515693 40.6097924,12.527283 C43.177689,12.538873 45.2586091,14.825635 45.2586091,17.1026914 Z" id="green" fill="#57CF27" fill-rule="nonzero" transform="translate(40.674608, 27.097010) rotate(60.000000) translate(-40.674608, -27.097010) "></path><path d="M28.0410158,17.0465598 L28.0410158,36.9521632 C28.0410158,39.525562 25.9591158,41.6106479 23.3912193,41.6106479 C20.8233227,41.6106479 18.7433824,39.3115545 18.7433824,37.035233 L18.7433824,17.0473055 C18.7433824,14.7695034 20.8243026,12.4595614 23.3921991,12.4711513 C25.9600956,12.4827413 28.0410158,14.7695034 28.0410158,17.0465598 Z" id="red" fill="#FF561B" fill-rule="nonzero" transform="translate(23.392199, 27.040878) rotate(-60.000000) translate(-23.392199, -27.040878) "></path><g id="inner-round"><use fill="black" fill-opacity="1" filter="url(#filter-3)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use><use fill="#F7F7F7" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use></g></g></g></g></svg></a>
-          <a href="#"><h1 class="title">YAPI 接口文档</h1></a>
+          <a href="#" style="display: inherit;">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;width: 32px;height: 32px;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="72.052" y1="62.4301" x2="436.0596" y2="438.1046">
+	<stop offset="0" style="stop-color:#00DFD0"></stop>
+	<stop offset="0.0937" style="stop-color:#03D6D2"></stop>
+	<stop offset="0.2464" style="stop-color:#0BBED7"></stop>
+	<stop offset="0.4393" style="stop-color:#1796DF"></stop>
+	<stop offset="0.6647" style="stop-color:#295FEB"></stop>
+	<stop offset="0.9147" style="stop-color:#3F19FA"></stop>
+	<stop offset="1" style="stop-color:#4700FF"></stop>
+</linearGradient>
+<path class="st0" d="M398.41,263.87c-29.78,35.32-70.62,59.52-115.28,69.3V149.19c0-4.06,3.29-7.35,7.35-7.35h78.09
+	c8.12,0,14.71-6.58,14.71-14.71V68.3c0-8.12-6.58-14.71-14.71-14.71H109.44c-8.12,0-14.71,6.58-14.71,14.71v58.83
+	c0,8.12,6.58,14.71,14.71,14.71h78.09c4.06,0,7.35,3.29,7.35,7.35v184.14c-44.08-9.43-83.83-32.78-113.75-67.64
+	c-4.96-5.78-13.67-6.48-19.75-1.89L8.31,303.85c-3.31,2.49-3.97,7.3-1.39,10.55c47.35,59.62,114,97.76,187.97,108.67
+	c0.43,0.06,0.86,0.12,1.28,0.19c6.78,0.97,13.61,1.73,20.5,2.24c7.39,0.54,14.83,0.92,22.33,0.92c7.34,0,14.63-0.37,21.9-0.92
+	c7.03-0.53,14-1.33,20.94-2.36c0.43-0.06,0.86-0.13,1.29-0.19c74.6-11.35,143.18-50.97,190-111.15c2.54-3.27,1.82-8.08-1.51-10.53
+	l-53.51-39.45C411.99,257.3,403.31,258.06,398.41,263.87z"></path>
+</svg>
+          </a>
+          <a href="#"><h1 class="title">通采2.0 标准接口文档</h1></a>
           <div class="nav">
-            <a href="https://hellosean1025.github.io/yapi/">YApi</a>
+            <a href="https://www.nbdeli.com/">通采2.0</a>
           </div>
         </div>
         <div class="g-doc">
@@ -158,7 +180,7 @@ class exportController extends baseController {
           <div id="right" class="content-right">
           ${tp}
             <footer class="m-footer">
-              <p>Build by <a href="https://ymfe.org/">YMFE</a>.</p>
+              <p>Build by <a href="https://www.nbdeli.com/">DELI</a>.</p>
             </footer>
           </div>
         </div>
